@@ -8,19 +8,19 @@ class FakeRouter {
   navigate(params: any) {}
 }
 
-class FakeActivatedRouter {
-  // params: Observable<any> = EMPTY;
+// class FakeActivatedRouter {
+//   // params: Observable<any> = EMPTY;
 
-  private subject = new Subject();
+//   private subject = new Subject();
 
-  push(value: any) {
-    this.subject.next(value);
-  }
+//   push(value: any) {
+//     this.subject.next(value);
+//   }
 
-  get params() {
-    return this.subject.asObservable();
-  }
-}
+//   get params() {
+//     return this.subject.asObservable();
+//   }
+// }
 
 describe('RouterDoctorComponent', () => {
   let component: RouterDoctorComponent;
